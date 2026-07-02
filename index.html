@@ -6,57 +6,55 @@
     <title>Market RDC</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans pb-20">
+<body class="bg-gray-100 font-sans pb-24">
 
     <!-- En-tête -->
-    <header class="bg-[#0D6EFD] p-4 text-white flex justify-between items-center">
-        <h1 class="font-bold text-xl">Market RDC</h1>
-        <div class="flex gap-4"><span>🔔</span><span>💬</span></div>
+    <header class="bg-white p-4 flex justify-between items-center shadow-sm">
+        <h1 class="font-bold text-xl text-[#0D6EFD]">Market RDC</h1>
+        <div class="flex gap-3">🔔 💬</div>
     </header>
 
     <!-- Recherche -->
     <div class="p-4">
-        <input type="text" placeholder="Rechercher un produit..." class="w-full p-3 rounded-lg border shadow-sm">
+        <input type="text" placeholder="Que recherchez-vous ?" class="w-full p-3 rounded-lg border shadow-sm">
     </div>
 
-    <!-- Bannière -->
-    <div class="mx-4 bg-[#0D6EFD] text-white p-6 rounded-xl shadow-lg">
-        <h2 class="font-bold text-lg">Offres spéciales</h2>
-        <p>Jusqu'à -30% sur une sélection !</p>
+    <!-- Catégories -->
+    <div class="grid grid-cols-4 gap-4 p-4 text-center">
+        <div class="flex flex-col items-center"><div class="bg-blue-100 p-3 rounded-full mb-1">📱</div><span class="text-[10px]">Tel</span></div>
+        <div class="flex flex-col items-center"><div class="bg-blue-100 p-3 rounded-full mb-1">👕</div><span class="text-[10px]">Mode</span></div>
+        <div class="flex flex-col items-center"><div class="bg-blue-100 p-3 rounded-full mb-1">💻</div><span class="text-[10px]">Info</span></div>
+        <div class="flex flex-col items-center"><div class="bg-blue-100 p-3 rounded-full mb-1">🚗</div><span class="text-[10px]">Auto</span></div>
     </div>
 
-    <!-- Section Produits -->
+    <!-- Produits -->
     <div class="p-4">
-        <h2 class="font-bold text-lg mb-4">Produits recommandés</h2>
+        <h2 class="font-bold text-lg mb-4">Produits populaires</h2>
         <div class="grid grid-cols-2 gap-4">
-            
-            <!-- Produit 1 -->
             <div class="produit-item bg-white p-3 rounded-lg shadow">
-                <div class="bg-gray-300 h-24 mb-2 rounded flex items-center justify-center text-gray-500">Image</div>
-                <h3 class="font-bold text-sm">Samsung Galaxy A14</h3>
-                <p class="text-[#28A745] font-bold">250 000 FC</p>
+                <div class="bg-gray-200 h-24 mb-2 rounded flex items-center justify-center">Photo</div>
+                <h3 class="font-bold text-sm">iPhone 13 Pro Max</h3>
+                <p class="text-[#28A745] font-bold">750 $</p>
+                <p class="text-[10px] text-gray-500">📍 Lubumbashi</p>
             </div>
-
-            <!-- Produit 2 -->
             <div class="produit-item bg-white p-3 rounded-lg shadow">
-                <div class="bg-gray-300 h-24 mb-2 rounded flex items-center justify-center text-gray-500">Image</div>
-                <h3 class="font-bold text-sm">Nike Air Force 1</h3>
-                <p class="text-[#28A745] font-bold">180 000 FC</p>
+                <div class="bg-gray-200 h-24 mb-2 rounded flex items-center justify-center">Photo</div>
+                <h3 class="font-bold text-sm">HP Pavilion 15</h3>
+                <p class="text-[#28A745] font-bold">450 $</p>
+                <p class="text-[10px] text-gray-500">📍 Kinshasa</p>
             </div>
-
         </div>
     </div>
 
-    <!-- Navigation fixe en bas -->
+    <!-- Navigation -->
     <nav class="fixed bottom-0 w-full bg-white border-t p-3 flex justify-around items-center z-50">
         <div class="text-center text-[#0D6EFD]">🏠<br><span class="text-[10px]">Accueil</span></div>
-        <div class="text-center">📦<br><span class="text-[10px]">Catégories</span></div>
-        <div class="bg-[#28A745] text-white p-4 rounded-full -mt-8 font-bold shadow-lg">+</div>
+        <div class="text-center">⭐<br><span class="text-[10px]">Favoris</span></div>
+        <div class="bg-[#28A745] text-white p-4 rounded-full -mt-8 font-bold shadow-lg text-xl">+</div>
         <div class="text-center">💬<br><span class="text-[10px]">Messages</span></div>
         <div class="text-center">👤<br><span class="text-[10px]">Profil</span></div>
     </nav>
 
-    <!-- Script de recherche -->
     <script>
         function filtrerProduits() {
             let input = document.querySelector('input').value.toLowerCase();
