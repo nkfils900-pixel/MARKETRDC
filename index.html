@@ -3,62 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market RDC</title>
+    <title>Favoris - Market RDC</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 pb-20">
-
-    <!-- Header avec Logo -->
-    <header class="bg-white p-4 shadow-sm flex items-center">
-        <h1 class="text-2xl font-bold text-[#0D6EFD]">Market RDC</h1>
+    <header class="p-4 bg-white shadow-sm">
+        <h1 class="text-2xl font-bold text-[#006EFD]">Mes Favoris</h1>
     </header>
-
-    <!-- Barre de recherche -->
     <div class="p-4">
-        <input type="text" placeholder="Rechercher des produits..." class="w-full p-3 rounded-lg border border-gray-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#0D6EFD]">
+        <p>Voici tes articles favoris.</p>
     </div>
-
-    <!-- Bannière Promotionnelle -->
-    <div class="mx-4 my-2 p-6 bg-[#0D6EFD] rounded-xl text-white">
-        <h2 class="text-lg font-bold">Vente Flash !</h2>
-        <p class="text-sm opacity-90">Découvrez les meilleures affaires près de chez vous.</p>
-    </div>
-
-    <!-- Catégories -->
-    <div class="px-4 py-2">
-        <h3 class="font-bold text-gray-700 mb-3">Catégories</h3>
-        <div class="flex gap-4 overflow-x-auto">
-            <div class="bg-white p-3 rounded-lg shadow-sm border text-center min-w-[80px]">📱<br>Élec</div>
-            <div class="bg-white p-3 rounded-lg shadow-sm border text-center min-w-[80px]">🏠<br>Maison</div>
-            <div class="bg-white p-3 rounded-lg shadow-sm border text-center min-w-[80px]">👗<br>Mode</div>
-        </div>
-    </div>
-
-    <!-- Produits Recommandés -->
-    <div class="p-4">
-        <h3 class="font-bold text-gray-700 mb-3">Recommandés pour vous</h3>
-        <div class="grid grid-cols-2 gap-4">
-            <div class="bg-white p-2 rounded-lg shadow-sm">
-                <div class="h-32 bg-gray-200 rounded mb-2"></div>
-                <p class="font-bold">Produit 1</p>
-                <p class="text-[#28A745] font-bold">15 000 FC</p>
-            </div>
-            <div class="bg-white p-2 rounded-lg shadow-sm">
-                <div class="h-32 bg-gray-200 rounded mb-2"></div>
-                <p class="font-bold">Produit 2</p>
-                <p class="text-[#28A745] font-bold">25 000 FC</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Menu de navigation en bas -->
+    <!-- Menu de navigation -->
     <nav class="fixed bottom-0 w-full bg-white border-t p-3 flex justify-around items-center z-50">
-        <a href="index.html" class="text-center text-[#0D6EFD]">🏠<br><span class="text-[10px]">Accueil</span></a>
-        <a href="#" class="text-center text-gray-500">📂<br><span class="text-[10px]">Catégories</span></a>
-        <div class="bg-[#28A745] text-white p-4 rounded-full -mt-8 font-bold shadow-lg text-xl">+</div>
-        <a href="#" class="text-center text-gray-500">💬<br><span class="text-[10px]">Messages</span></a>
-        <a href="#" class="text-center text-gray-500">👤<br><span class="text-[10px]">Profil</span></a>
+        <a href="index.html" class="text-center text-gray-500">Accueil</a>
+        <a href="favoris.html" class="text-center text-[#28A745] font-bold">Favoris</a>
     </nav>
-
 </body>
 </html>
